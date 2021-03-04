@@ -1,0 +1,33 @@
+header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-decoration: none;
+}
+    h1{
+    font-size: 5.3rem;
+    margin-top:205px;
+    margin-left: 0px;
+    font-weight: bolder;
+    color: whitesmoke;
+    font-family: arial;
+    }
+  
+  li{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  .descBox {
+    background-color: #492445 ;
+    color: white;
+    padding: 5%;
+    margin: 0 1%;
+    display: block;
+   box-sizing: border-box
+  }
+
+
+
