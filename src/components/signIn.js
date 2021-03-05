@@ -1,17 +1,17 @@
 import React from "react";
 import Header from "./header";
 import styles from "./login.css";
-export default class SignIn extends React.Component {
- 
+import Footer from "./footer";
 
+export default class SignIn extends React.Component {
+  
   render() {
     return (
-      <div className="base-container" ref={this.props.containerRef}>
+      <div>
         <Header></Header>
-        <div className="header">Sign In</div>
-        <div className="content">
-          
+        <h1>Sign in</h1>
           <div className="form">
+            
             <div className="form-group">
               <label htmlFor="email">Email</label>
               <input type="text" name="email" placeholder="email" />
@@ -20,14 +20,14 @@ export default class SignIn extends React.Component {
               <label htmlFor="password">Password</label>
               <input type="text" name="password" placeholder="password" />
             </div>
+            <div className="form-group">
+             <button>Sign In</button>
+            </div>
+            <br></br>
           </div>
-        </div>
-        <div className="footer">
-          <button type="button" className="btn">
-            Sign In
-          </button>
-        </div>
-      </div>
+          <Footer></Footer>
+            </div>
+
     );
   }
 }

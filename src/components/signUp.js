@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "./header";
+import styles from "./login.css";
+import Footer from "./footer";
 
 export default class SignUp extends React.Component {
   
   render() {
     return (
-      <div className="base-container" ref={this.props.containerRef}>
+      <div>
         <Header></Header>
-        <div className="header">SignUp</div>
-        <div className="content">
-          
+        <h1>Sign up</h1>
           <div className="form">
             <div className="form-group">
               <label htmlFor="username">Username</label>
@@ -23,14 +23,14 @@ export default class SignUp extends React.Component {
               <label htmlFor="password">Password</label>
               <input type="text" name="password" placeholder="password" />
             </div>
+            <div className="form-group">
+             <button>Sign Up</button>
+            </div>
+            <br></br>
           </div>
-        </div>
-        <div className="footer">
-          <button type="button" className="btn">
-            signUp
-          </button>
-        </div>
-      </div>
+          <Footer></Footer>
+            </div>
+
     );
   }
 }

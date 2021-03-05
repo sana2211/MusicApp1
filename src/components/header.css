@@ -1,3 +1,7 @@
+*{
+
+}
+
 header {
     overflow: hidden;
     position: fixed;
@@ -26,7 +30,7 @@ header {
     padding: 5%;
     margin: 0 1%;
     display: block;
-   box-sizing: border-box
+   box-sizing: border-box;
   }
 
 
