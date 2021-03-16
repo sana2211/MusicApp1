@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './header.css';
 
-function Header() {
+function Header(props) {
+  const {content} = props;
   return (
       <header>
         <nav>

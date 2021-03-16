@@ -3,12 +3,12 @@ import Header from "./header";
 import styles from "./login.css";
 import Footer from "./footer";
 
-export default class SignUp extends React.Component {
+export default class AddMusic extends React.Component {
 
   state = {
-    fullname: '',
-    email: '',
-    pasword:  ''
+    title: '',
+    artist: '',
+    url:  ''
   }
 
   handleInput(evt)
@@ -21,13 +21,14 @@ export default class SignUp extends React.Component {
     console.log(this.state.fullname);
   }
   handleSubmit = (evt) => {
+      //Add validation
     evt.preventDefault();
     fetch('http://localhost:8000/api/users', {
       method: 'POST',
       body: JSON.stringify({
-        'fullname': this.state.fullname, 
-        'email': this.state.email,
-        'password': this.state.password
+        'title': this.state.fullname, 
+        'artist': this.state.email,
+        'url': this.state.password
       }),
       headers: {
         'Content-Type': 'application/json'
@@ -39,24 +40,25 @@ export default class SignUp extends React.Component {
   render() {
     return (
       <div>
-        <Header></Header>
-        <h1>Sign up</h1>
+        <h2>Add music</h2>
         <form onSubmit={(evt)=> this.handleSubmit(evt)}>
-          <div className="flex-container">
+          <div className="form">
             <div className="form-group">
-              <label htmlFor="fullname">Fullname</label>
+              <label htmlFor="title">Title</label>
               <input onChange={(evt)=>this.handleInput(evt)} type="text" name="fullname" placeholder="fullname" />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="artist">Artist</label>
               <input onChange={(evt)=>this.handleInput(evt)} type="text" name="email" placeholder="email" />
             </div>
             <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <input onChange={(evt)=>this.handleInput(evt)} type="password" name="password" placeholder="password" />
+              <label htmlFor="url">Url</label>
+              <input onChange={(evt)=>this.handleInput(evt)} type="password" name="text" placeholder="password" />
             </div>
             <div className="form-group">
-             <button>Sign Up</button>
+             <button>Add</button>
+             <button>Save</button>
+             <button>Delete</button>
             </div>
             <br></br>
           </div>

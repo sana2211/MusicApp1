@@ -34,9 +34,9 @@ export default class SignIn extends React.Component {
     .then(result=>result.json())
     .then(result=>{
       console.log(result);
-      if(result.token)
+      if(result.email)
       {
-        window.location.replace('/dashboard')
+        window.location.replace('/dashboard/'+result.email)
       }
       else{
        alert('Invalid login')
@@ -50,7 +50,7 @@ export default class SignIn extends React.Component {
         <Header></Header>
         <h1>Sign in</h1>
         <form onSubmit={(evt)=> this.handleSubmit(evt)}>
-          <div className="form">
+          <div className="flex-container">
             
             <div className="form-group">
               <label htmlFor="email">Email</label>
@@ -66,6 +66,7 @@ export default class SignIn extends React.Component {
             <br></br>
           </div>
           </form>
+
           <Footer></Footer>
           </div>
     );
