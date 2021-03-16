@@ -36,7 +36,7 @@ export default class SignIn extends React.Component {
       console.log(result);
       if(result.email)
       {
-        window.location.replace('/dashboard/'+result.email)
+        window.location.replace('/dashboard/'+result.id)
       }
       else{
        alert('Invalid login')

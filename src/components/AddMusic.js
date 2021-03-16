@@ -4,7 +4,6 @@ import styles from "./login.css";
 import Footer from "./footer";
 
 export default class AddMusic extends React.Component {
-
   state = {
     title: '',
     artist: '',
@@ -13,22 +12,27 @@ export default class AddMusic extends React.Component {
 
   handleInput(evt)
   { 
-    //console.log(evt.currentTarget.value);
+    
     const {name, value} = evt.currentTarget;
     this.setState({
       [name]: value,
     });
-    console.log(this.state.fullname);
+   
   }
   handleSubmit = (evt) => {
       //Add validation
+  const a = window.location.href.split('/');
+  const id = a[a.length - 1]
+  console.log(id);
+
     evt.preventDefault();
-    fetch('http://localhost:8000/api/users', {
+    fetch('http://localhost:8000/api/bookmarks/'+id, {
       method: 'POST',
       body: JSON.stringify({
-        'title': this.state.fullname, 
-        'artist': this.state.email,
-        'url': this.state.password
+        'user_id': id,
+        'title': this.state.title, 
+        'artist': this.state.artist,
+        'url': this.state.url
       }),
       headers: {
         'Content-Type': 'application/json'
@@ -45,15 +49,15 @@ export default class AddMusic extends React.Component {
           <div className="form">
             <div className="form-group">
               <label htmlFor="title">Title</label>
-              <input onChange={(evt)=>this.handleInput(evt)} type="text" name="fullname" placeholder="fullname" />
+              <input onChange={(evt)=>this.handleInput(evt)} type="text" name="title" placeholder="title" />
             </div>
             <div className="form-group">
               <label htmlFor="artist">Artist</label>
-              <input onChange={(evt)=>this.handleInput(evt)} type="text" name="email" placeholder="email" />
+              <input onChange={(evt)=>this.handleInput(evt)} type="text" name="artist" placeholder="artist" />
             </div>
             <div className="form-group">
               <label htmlFor="url">Url</label>
-              <input onChange={(evt)=>this.handleInput(evt)} type="password" name="text" placeholder="password" />
+              <input onChange={(evt)=>this.handleInput(evt)} type="text" name="url" placeholder="url" />
             </div>
             <div className="form-group">
              <button>Add</button>

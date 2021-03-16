@@ -3,6 +3,7 @@ import DashboardHeader from "./DashboardHeader";
 import styles from "./login.css";
 import Footer from "./footer";
 import AddMusic from "./AddMusic";
+import Getmusic from './Getmusic';
 
 class Dashboard extends Component{
 
@@ -18,6 +19,8 @@ class Dashboard extends Component{
                         Whats Next? Just add your favorite music and get started with the app!
                     </h2> 
                     <AddMusic></AddMusic>
+                    <hr></hr>
+                    <Getmusic></Getmusic>
 </div>
       
         )};
