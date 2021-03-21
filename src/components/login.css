@@ -73,7 +73,14 @@
             transition: all 250ms ease-in-out;
             cursor:pointer;
         }
-        
+        h2{
+            color:#492445;
+        } 
+        p,ul{
+            color:#492445;
+            background-color: #d7cdcc;
+
+        } 
         .footer {
             margin-top: 3em;
           }

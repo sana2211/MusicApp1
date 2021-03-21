@@ -26,6 +26,15 @@ export default class AddMusic extends React.Component {
   console.log(id);
 
     evt.preventDefault();
+    if(!this.state.title)
+    {
+      alert("Title is Required");
+      return false;
+    }
+    const data = JSON.stringify(
+      {
+        title_name: this.state.title
+      });
     fetch('http://localhost:8000/api/bookmarks/'+id, {
       method: 'POST',
       body: JSON.stringify({
@@ -38,10 +47,21 @@ export default class AddMusic extends React.Component {
         'Content-Type': 'application/json'
       }
     })
-    .then(result=>console.log(result.json()))
+    //.then(result=>console.log(result.json()))
+    .then(response=>response.json())
+    .then(response=>
+      {
+        if(response)
+        {
+          alert("Music Added!");
+          window.location.reload();
+        }
+      })
     .catch(err=>console.log(err))
   }
   render() {
+    const { music } = this.props
+
     return (
       <div>
         <h2>Add music</h2>
@@ -61,15 +81,15 @@ export default class AddMusic extends React.Component {
             </div>
             <div className="form-group">
              <button>Add</button>
+          
              <button>Save</button>
              <button>Delete</button>
             </div>
             <br></br>
           </div>
-          </form>
-          <Footer></Footer>
-            </div>
+          </form>  
 
-    );
-  }
+             </div>
+
+    )};
 }
