@@ -2,9 +2,11 @@ p{
     background-color: #d7cdcc;
 }
 ul {
+    position: relative;
+    width: 550px;
+    height: 250px;
     background-color: #d7cdcc;
-    width: 500px;
-    height: 75px;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
     margin-left: 200px;
   }

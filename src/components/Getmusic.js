@@ -23,18 +23,21 @@ class Getmusic extends Component {
         return ( 
             <div>
                 <p>Get music</p>
-                
+                <ul>
                     
                 {
                 this.state.data.map((item)=>{
-                    return (<ul>
-                            <li>{item.url}</li>
-                            <li>{item.artist}</li>
-                            <li>{item.title}</li>
-                    </ul>)
+                    return (<div>
+                            <li>URL: {item.url}</li>
+                            <li>ARTIST: {item.artist}</li>
+                            <li>TITLE: {item.title}</li>
+                            <button>Delete</button>
+                            <br></br>
+                            </div>
+                    )
                 })
                  }
-                 
+                 </ul>
             </div>
          );
     }

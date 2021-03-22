@@ -5,7 +5,7 @@ class  Footer extends Component {
     render() { 
         return (
             <footer>
-                <p>&copy; 2021 VibratitonMusic</p>
+                <p>&copy; 2021 Vibrato Music</p>
             
             </footer>
           );

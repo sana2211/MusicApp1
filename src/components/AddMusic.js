@@ -81,9 +81,6 @@ export default class AddMusic extends React.Component {
             </div>
             <div className="form-group">
              <button>Add</button>
-          
-             <button>Save</button>
-             <button>Delete</button>
             </div>
             <br></br>
           </div>

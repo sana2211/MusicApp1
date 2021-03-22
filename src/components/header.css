@@ -1,47 +1,48 @@
-*{
 
-}
 
 header {
     overflow: hidden;
-    position: fixed;
-    top: 0;
+    top: 10px;
     width: 100%;
-    text-decoration: none;
+    position: float-right;
 }
     h1{
     font-size: 5.3rem;
-    margin-top:205px;
-    margin-left: 0px;
+    margin-top: 40px;
     font-weight: bolder;
-    color: whitesmoke;
     font-family: arial;
+    color: whitesmoke;
+
     }
-  
-  li{
+    h3{
+      color:#492445;
+
+  }
+  nav{
     cursor: pointer;
     font-size: 20px;
-    font-weight: lighter;
+    font-weight: medium;
+    margin-right: 10px;
   }
-  
   .flex-container{
     background-color: #492445 ;
-    color: white;
+    color:  rgb(167, 161, 161);
     padding: 5%;
-    margin: 0 1%;
     display: block;
     box-sizing: border-box;
-  }
-
-
-  .flex-container{
-    margin: 0px auto;
-    width: 60%;
+    margin: auto;
+    width: 80%;
     text-align: center;
     
   }
   .flex-container h3{
-  color: rgb(167, 161, 161);
-  flex-direction: column;
-  }
+    color: rgb(167, 161, 161);
+    flex-direction: column;
+    font-size: 30px;
+    }
+
+    p{
+      font-size: 20px;
+      background-color: none;
+    }
   
