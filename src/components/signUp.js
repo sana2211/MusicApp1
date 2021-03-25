@@ -33,7 +33,12 @@ export default class SignUp extends React.Component {
         'Content-Type': 'application/json'
       }
     })
-    .then(result=>console.log(result.json()))
+    .then(result=>{
+      if(result.ok){
+        alert("Thank you for your registration!")
+      window.location.replace('/signin')
+      }
+    })
     .catch(err=>console.log(err))
   }
   render() {

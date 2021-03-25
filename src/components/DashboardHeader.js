@@ -14,7 +14,7 @@ function DashboardHeader(props) {
         <nav>
           <ul>
             <ul className="menuul">
-            <li><Link to="/" style={style}>Welcome {props.email}</Link></li>
+            <li>Welcome {props.currentUser}</li>
             <li><Link to="/signin" style={style}>Sign out</Link></li>
             </ul>
           </ul>
