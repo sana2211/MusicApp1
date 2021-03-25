@@ -1,7 +1,5 @@
 import React from "react";
-import Header from "./header";
-import styles from "./login.css";
-import Footer from "./footer";
+
 
 export default class AddMusic extends React.Component {
   state = {

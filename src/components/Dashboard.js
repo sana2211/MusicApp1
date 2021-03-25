@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import DashboardHeader from "./DashboardHeader";
-import styles from "./login.css";
 import Footer from "./footer";
 import AddMusic from "./AddMusic";
 import Getmusic from './Getmusic';
@@ -29,7 +28,7 @@ class Dashboard extends Component{
                 <br></br>
              <DashboardHeader currentUser={this.state.fullname}></DashboardHeader>
                     <h2>
-                    <i class="fas fa-music"></i>
+                    <i className="fas fa-music"></i>
                         Whats Next? Just add your favorite music and get started with the app!
                     </h2> 
                     

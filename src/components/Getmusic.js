@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styles from "./GetMusic.css";
 
 class Getmusic extends Component {
     state = { data: [] }
@@ -49,7 +48,7 @@ class Getmusic extends Component {
                     
                 {
                 this.state.data.map((item)=>{
-                    return (<div>
+                    return (<div key={item.id}>
                             <li>URL: {item.url}</li>
                             <li>ARTIST: {item.artist}</li>
                             <li>TITLE: {item.title}</li>

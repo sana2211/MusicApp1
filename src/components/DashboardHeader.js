@@ -5,7 +5,7 @@ import './header.css';
 
 const style = {
     color: 'white',
-    'text-decoration': 'none'
+    'textDecoration': 'none'
 };
 
 function DashboardHeader(props) {

@@ -7,7 +7,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import SignIn from './components/signIn';
 import SignUp from './components/signUp';
 import Dashboard from './components/Dashboard';
-import DashboardHeader from './components/DashboardHeader';
 
 ReactDOM.render(
   <React.StrictMode>
