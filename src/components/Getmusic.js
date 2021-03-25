@@ -19,11 +19,33 @@ class Getmusic extends Component {
       {
         this.fetchAPI();
       }
+
+      handleDelete = (musicid) =>
+      {
+        fetch('http://localhost:8000/api/bookmarks/'+ `${musicid}`, {
+            method: 'DELETE',
+        })
+        .then(res => {
+            if (!res.ok) {
+              return res.json().then(error => {
+                // then throw it
+                throw error
+              })
+            }
+            alert('Deleted!');
+            this.fetchAPI();
+          })
+          .catch(error => {
+            console.error(error)
+          });
+    }
+
+
     render() { 
         return ( 
             <div>
                 <p>Get music</p>
-                <ul>
+                <ul className="getmusicul">
                     
                 {
                 this.state.data.map((item)=>{
@@ -31,7 +53,7 @@ class Getmusic extends Component {
                             <li>URL: {item.url}</li>
                             <li>ARTIST: {item.artist}</li>
                             <li>TITLE: {item.title}</li>
-                            <button>Delete</button>
+                            <button onClick={()=>this.handleDelete(item.id)}>Delete</button>
                             <br></br>
                             </div>
                     )

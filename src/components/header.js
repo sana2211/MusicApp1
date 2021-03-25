@@ -6,7 +6,7 @@ function Header(props) {
   const {content} = props;
   return (
       <header>
-        <nav id="left-nav">
+        <nav>
           <ul>
             <ul className="menuul">
             <li><Link to="/">Home</Link></li>
