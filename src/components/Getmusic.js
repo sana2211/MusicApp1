@@ -21,7 +21,7 @@ class Getmusic extends Component {
 
       handleDelete = (musicid) =>
       {
-        fetch('http://localhost:8000/api/bookmarks/'+ `${musicid}`, {
+        fetch(`http://localhost:8000/api/bookmarks/${`${musicid}`}`, {
             method: 'DELETE',
         })
         .then(res => {

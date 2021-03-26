@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './header.css';
 
 function Header(props) {
-  const {content} = props;
+  //const { data} = props;
   return (
       <header>
         <nav>
