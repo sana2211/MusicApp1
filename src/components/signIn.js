@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./header";
-import styles from "./login.css";
 import Footer from "./footer";
 
 export default class SignIn extends React.Component {
@@ -54,11 +53,11 @@ export default class SignIn extends React.Component {
             
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input onChange={(evt)=>this.handleInput(evt)} type="text" name="email" placeholder="Email" />
+              <input onChange={(evt)=>this.handleInput(evt)} type="text" name="email" placeholder="Email" required/>
             </div>
             <div className="form-group">
               <label htmlFor="password">Password</label>
-              <input onChange={(evt)=>this.handleInput(evt)} type="password" name="password" placeholder="password" />
+              <input onChange={(evt)=>this.handleInput(evt)} type="password" name="password" placeholder="password" required/>
             </div>
             <div className="form-group">
              <button>Sign In</button>

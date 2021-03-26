@@ -1,7 +1,5 @@
 import React from "react";
-import Header from "./header";
-import styles from "./login.css";
-import Footer from "./footer";
+
 
 export default class AddMusic extends React.Component {
   state = {
@@ -31,10 +29,7 @@ export default class AddMusic extends React.Component {
       alert("Title is Required");
       return false;
     }
-    const data = JSON.stringify(
-      {
-        title_name: this.state.title
-      });
+   
     fetch('http://localhost:8000/api/bookmarks/'+id, {
       method: 'POST',
       body: JSON.stringify({
@@ -60,7 +55,7 @@ export default class AddMusic extends React.Component {
     .catch(err=>console.log(err))
   }
   render() {
-    const { music } = this.props
+    //const { music } = this.props
 
     return (
       <div>

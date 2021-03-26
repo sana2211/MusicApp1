@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './header.css';
+//import './header.css';
+import './login.css';
 
 
 const style = {
     color: 'white',
-    'text-decoration': 'none'
+    'textDecoration': 'none'
 };
 
 function DashboardHeader(props) {
@@ -14,7 +15,7 @@ function DashboardHeader(props) {
         <nav>
           <ul>
             <ul className="menuul">
-            <li><Link to="/" style={style}>Welcome {props.email}</Link></li>
+            <li>Welcome {props.currentUser}</li>
             <li><Link to="/signin" style={style}>Sign out</Link></li>
             </ul>
           </ul>
