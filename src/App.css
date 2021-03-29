@@ -8,7 +8,7 @@ html, body
   padding:0;
   line-height: 1.5;
   color: rgb(61, 58, 58);
-  background-color:black;
+  background-color: #391832;
   height: auto;
   text-align: center; 
 }
@@ -34,7 +34,8 @@ li{
 
 .menuul
 {
-  float: right
+  float: right;
+  color:whitesmoke;
 }
 
 nav

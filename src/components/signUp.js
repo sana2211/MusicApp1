@@ -21,7 +21,8 @@ export default class SignUp extends React.Component {
   }
   handleSubmit = (evt) => {
     evt.preventDefault();
-    fetch('http://localhost:8000/api/users', {
+    fetch('http://localhost:8000/api/users', 
+    {
       method: 'POST',
       body: JSON.stringify({
         'fullname': this.state.fullname, 

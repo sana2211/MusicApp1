@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './GetMusic.css';
 
 class Getmusic extends Component {
     state = { data: [] }
@@ -42,26 +43,38 @@ class Getmusic extends Component {
 
     render() { 
         return ( 
-            <div>
-                <p>Get music</p>
+                //<h2>Get music</h2>
+                <div className="row-flex">
+                <h2>GET MUSIC</h2>
+
+                <div className="song-list-container">
+                <h2 className="category-header" id="song-list-header">
+
+                  <div className="title-header top-header" >Title</div>
+                  <div className="artist-header top-header">Artist</div>
+                  <div className="URL-header top-header">URL</div>
+
+       </h2>
+                </div>
                 <ul className="getmusicul">
                     
                 {
                 this.state.data.map((item)=>{
-                    return (<div key={item.id}>
-                            <li>URL: {item.url}</li>
-                            <li>ARTIST: {item.artist}</li>
-                            <li>TITLE: {item.title}</li>
+                    return (<div className="song-list-container" key={item.id}>
+                        
+                            <li> {item.title}</li>
+                            <li> {item.artist}</li>
+                            <li> {item.url}</li>
                             <button onClick={()=>this.handleDelete(item.id)}>Delete</button>
-                            <br></br>
                             </div>
                     )
                 })
                  }
                  </ul>
-            </div>
-         );
-    }
-}
+
+                </div>
+            );
+          }
+        }
  
 export default Getmusic;

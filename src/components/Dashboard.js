@@ -27,12 +27,12 @@ class Dashboard extends Component{
 
                 <br></br>
              <DashboardHeader currentUser={this.state.fullname}></DashboardHeader>
-                    <h2>
+                    <h3>
                     <i className="fas fa-music"></i>
-                        Whats Next? Just add your favorite music and get started with the app!
-                    </h2> 
-                    
+                         Whats Next ?  Just add your favorite music and get started with the app!
+                    </h3> 
                     <AddMusic></AddMusic>
+                    
                     <hr></hr>
                     <Getmusic></Getmusic>
                     <Footer></Footer>
