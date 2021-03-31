@@ -7,7 +7,7 @@ class Getmusic extends Component {
         const a = window.location.href.split('/');
   const id = a[a.length - 1]
   console.log(id);
-        const baseURL1 = 'http://localhost:8000/api/bookmarks/'+id;
+        const baseURL1 = 'https://musicappbackend101.herokuapp.com/api/bookmarks/'+id;
         const response = await fetch(baseURL1);
         const data = await response.json();
         console.log(data);
@@ -22,7 +22,7 @@ class Getmusic extends Component {
 
       handleDelete = (musicid) =>
       {
-        fetch(`http://localhost:8000/api/bookmarks/${`${musicid}`}`, {
+        fetch(`https://musicappbackend101.herokuapp.com/api/bookmarks/${`${musicid}`}`, {
             method: 'DELETE',
         })
         .then(res => {
@@ -43,7 +43,6 @@ class Getmusic extends Component {
 
     render() { 
         return ( 
-                //<h2>Get music</h2>
                 <div className="row-flex">
                 <h2>GET MUSIC</h2>
 
@@ -53,11 +52,10 @@ class Getmusic extends Component {
                   <div className="title-header top-header" >Title</div>
                   <div className="artist-header top-header">Artist</div>
                   <div className="URL-header top-header">URL</div>
-
-       </h2>
+                </h2>
                 </div>
+
                 <ul className="getmusicul">
-                    
                 {
                 this.state.data.map((item)=>{
                     return (<div className="song-list-container" key={item.id}>

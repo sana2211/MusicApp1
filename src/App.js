@@ -6,11 +6,6 @@ import './App.css';
 import Header from "./components/header";
 import SubHeader from "./components/subHeader";
 import Footer from "./components/footer";
-//import Dashboard from "./components/Dashboard";
-//import DashboardHeader from './components/DashboardHeader';
-//import AddMusic from './components/AddMusic';
-
-
 
 function App() {
   return (

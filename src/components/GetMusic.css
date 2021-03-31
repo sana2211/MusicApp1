@@ -2,59 +2,39 @@
   #song-list-header{
       padding:1px 5px;
       font-size: 20px;
-      display:flex;
+      display: flex;
       margin:0;
       justify-content: space-around;
-        font-size: 14 px;
+      font-size: 14 px;
       text-transform: uppercase;
-      min-width: 900px;
-
+      min-width:350px;
+      position: relative;
   }
-
-  .category-header{
-    font-size:20px;
-    text-align: center;
-    margin:auto;
-  border-bottom: 1px solid black;
-  }
-.title-header{
-    
-    text-align: left;
-    width: 100px;
-    white-space: no-wrap;
-    overflow: hidden;
-    text-overflow: ellipses;
-}
-.artist-header{
-    text-align: left;
-    width: 100 px;
-    overflow: hidden;    
-    text-overflow: ellipses;
-    white-space: no-wrap;
-
-}
-.URL-header{
-    text-align: right;
-    width: 180 px;
-    white-space: no-wrap;
-    overflow-x: hidden;    
-    overflow-y: hidden;    
-}
-
 .song-list-container{
-    
+  position: relative;
+  overflow: hidden;
+  padding:1px 5px;
+  font-size: 18px;
+  display:inline-block;
+  margin-bottom: -250px;
+  padding-bottom: -250px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 14 px;
+ min-width:200px;
 color: white;
 font-weight: 400;
-font-size: 18px;
 margin:auto;
 border-bottom: 1px solid black;
-display:flex;
-justify-content: space-around;
-width: 950px;
-vertical-align: baseline;
 box-sizing: border-box;
 position:relative;
-outline: none;
-border-radius: 5px;
+border-radius: 1px;
+outline:none;
+}
+
+@media (max-width: 450px) {
+  .song-list-container,.category-header{
+    min-width: 5px;
+  }
 }
 

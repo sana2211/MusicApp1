@@ -1,15 +1,15 @@
 .flex-container {
-    width: 29em;
+    width: 30em;
     min-height: 27em;
-    display: inline-flexbox;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background-color:#d7cdcc;
-    box-shadow: 0 0 2px rgba(15, 15 , 15 0.28);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0 2px rgba(15, 15 , 15 0.28);
+    color: #492525;
     border: 2px solid #492445;
+    background-color:#d7cdcc;
     padding:3%;
     margin: 0 auto;
 }
@@ -17,6 +17,7 @@
 .header {
     font-size: 24px;
     margin: 11px;
+    font-family:Rock Salt;
 }
 .content {
     position: absolute;
@@ -34,7 +35,10 @@
         flex-direction: column;
         align-items: flex-start;
         width: fit-content;
+       
         color: #492525;
+   
+        
       }
       input {
         min-width: 13em;
@@ -52,7 +56,8 @@
        
         button{
             padding: 5px;
-            width: 100px;
+            width: 79px;
+            height: 35px;
            display: flex;
           justify-content: center;
             margin: 0;
@@ -75,18 +80,38 @@
             color:#492445;
         }
         p{
-            color:#492445;
+            color:whitesmoke;
+            font-family:url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
           }
           
         h3{
             color:white;
+            ;
             
         }
         .footer {
             margin-top: 3em;
           }
         
+          .flex-container1 {
+            width: 20em;
+            min-height: 15em;
+            display: flex;
+            display:inline-flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            position: relative;
+            padding:3%;
+            margin: 0 auto;
+        }
 
+        .landing-icon{
+          color: #a3cef1;
+            margin: 0 0 5px 0;
+          }
+        
           @media (max-width: 450px) {
             .flex-container {
                 width: 23em;
@@ -96,4 +121,3 @@
             } 
           
         }
-
