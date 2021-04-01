@@ -1,3 +1,26 @@
+# The Vibrato Music can be viewed here- https://music-app1-sana2211.vercel.app/.
+
+#  Overview- This app allows you to not only add songs but also store music from random websites. Users can add and delete music of their choice.
+
+# Screenshots of app: Landing Page
+
+<img width="791" alt="Screen Shot 2021-04-01 at 12 45 45 PM" src="https://user-images.githubusercontent.com/70413361/113269632-b49aa100-92e9-11eb-9a8c-136592cc2e93.png">
+<img width="769" alt="Screen Shot 2021-04-01 at 12 46 00 PM" src="https://user-images.githubusercontent.com/70413361/113269745-d3009c80-92e9-11eb-80c1-cb75daaa1c21.png">
+User Sign Up
+<img width="358" alt="Screen Shot 2021-04-01 at 12 58 27 PM" src="https://user-images.githubusercontent.com/70413361/113270010-1b1fbf00-92ea-11eb-9b65-749425e748bd.png">
+
+User Sign In
+<img width="366" alt="Screen Shot 2021-04-01 at 12 58 37 PM" src="https://user-images.githubusercontent.com/70413361/113270056-24a92700-92ea-11eb-86ac-2904713c7bf2.png">
+
+Dashboard
+
+<img width="354" alt="Screen Shot 2021-04-01 at 12 59 00 PM" src="https://user-images.githubusercontent.com/70413361/113270244-528e6b80-92ea-11eb-8d22-7b75e41f7db1.png">
+
+Add Music
+<img width="359" alt="Screen Shot 2021-04-01 at 12 58 52 PM" src="https://user-images.githubusercontent.com/70413361/113270122-38548d80-92ea-11eb-9e0c-c06ae917c928.png">
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
