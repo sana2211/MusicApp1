@@ -42,39 +42,34 @@ class Getmusic extends Component {
 
 
     render() { 
-        return ( 
-                <div className="row-flex">
-                <h2>GET MUSIC</h2>
-
-                <div className="song-list-container">
-                <h2 className="category-header" id="song-list-header">
-
-                  <div className="title-header top-header" >Title</div>
-                  <div className="artist-header top-header">Artist</div>
-                  <div className="URL-header top-header">URL</div>
-                </h2>
-                </div>
-
-                <ul className="getmusicul">
-                {
-                this.state.data.map((item)=>{
-                    return (<div className="song-list-item-container" key={item.id}>
-                        
-                            <li> {item.title}</li>
-                            <li> {item.artist}</li>
-                            <li> {item.url}</li>
-                            <button onClick={()=>this.handleDelete(item.id)}>
-                            <i className="fas fa-trash"></i>
+      return ( 
+          <div>
+              <h2>Get music</h2>
+              <form onSubmit={(evt)=> this.handleSubmit(evt)}>
+          <div className="flex-container2">
+            <div className="form-group"></div>
+              <ul className="getmusicul">
+                  
+              {
+              this.state.data.map((item)=>{
+                  return (<div class="flex-container2" key={item.id}>
+                          <li>TITLE: {item.title}</li><br></br>
+                          <li>ARTIST: {item.artist}</li><br></br>
+                          <li>URL: {item.url}</li>
+                          <button onClick={()=>this.handleDelete(item.id)}>                         
+                           <i className="fas fa-trash"></i>
                             </button>
-                            </div>
-                    )
-                })
-                 }
-                 </ul>
+                          <br></br>
+                          </div>
+                  )
+              })
+               }
+               </ul>
+          </div>
+          </form>
+          </div>
+       );
+  }
+}
 
-                </div>
-            );
-          }
-        }
- 
 export default Getmusic;

@@ -59,7 +59,10 @@ export default class AddMusic extends React.Component {
 
     return (
       <div>
-        <h2>Add music</h2>
+        <h2>Add music 
+          <br></br>
+        <i className="fas fa-music"></i>
+        </h2>
         <form onSubmit={(evt)=> this.handleSubmit(evt)}>
         <div className="flex-container">
             <div className="form-group">
