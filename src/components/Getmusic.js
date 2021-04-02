@@ -58,12 +58,14 @@ class Getmusic extends Component {
                 <ul className="getmusicul">
                 {
                 this.state.data.map((item)=>{
-                    return (<div className="song-list-container" key={item.id}>
+                    return (<div className="song-list-item-container" key={item.id}>
                         
                             <li> {item.title}</li>
                             <li> {item.artist}</li>
                             <li> {item.url}</li>
-                            <button onClick={()=>this.handleDelete(item.id)}>Delete</button>
+                            <button onClick={()=>this.handleDelete(item.id)}>
+                            <i className="fas fa-trash"></i>
+                            </button>
                             </div>
                     )
                 })

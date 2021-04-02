@@ -10,31 +10,41 @@
       min-width:350px;
       position: relative;
   }
-.song-list-container{
-  position: relative;
-  overflow: hidden;
-  padding:1px 5px;
-  font-size: 18px;
-  display:inline-block;
-  margin-bottom: -250px;
-  padding-bottom: -250px;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 14 px;
- min-width:200px;
-color: white;
-font-weight: 400;
-margin:auto;
-border-bottom: 1px solid black;
-box-sizing: border-box;
-position:relative;
-border-radius: 1px;
-outline:none;
-}
+  .song-list-container {
+    position: relative;
+     overflow-x: scroll;
+    overflow: hidden;
+    margin: 30px 0;
+    margin-top: 35px;
+    margin-bottom: -250px; 
+    padding-bottom: 250px;
+     z-index: -1;
+  }
+  
 
-@media (max-width: 450px) {
+.song-list-item-container{
+  position: relative;
+  color:white;
+  font-weight: 200;
+  font-size: 16px;
+  padding: 1px 5px;
+  border-bottom: 1px solid rgba(90, 90, 90, 0.5);
+  display: block;
+  justify-content: space-evenly;
+  margin-left: 30px;
+
+  margin-right: auto;
+  margin: 30px 0;
+  text-align: center;
+  min-width: 900px;
+}
+@media (min-width: 350px) {
   .song-list-container,.category-header{
     min-width: 5px;
+  }
+  .song-list-item-container{
+  display: inline-flexbox;
+  width: 300px;
   }
 }
 

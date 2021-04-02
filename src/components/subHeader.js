@@ -30,7 +30,7 @@ class SubHeader extends Component {
             
               <div className="flex-container1">
             <h3>Why use Vibrato Music
-              <img alt = "musicapp" style={{width:'250px', height:'auto'}} src="https://c0.wallpaperflare.com/preview/659/470/559/italy-turin-rock-venue.jpg"></img>
+              <img alt = "musicapp" style={{width:'250px', height:'140px'}} src="https://c0.wallpaperflare.com/preview/659/470/559/italy-turin-rock-venue.jpg"></img>
               </h3>
               <i className="fas fa-wifi landing-icon"></i>
               
