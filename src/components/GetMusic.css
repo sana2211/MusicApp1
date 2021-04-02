@@ -1,90 +1,42 @@
 
-  #song-list-header{
-      padding:1px 5px;
-      font-size: 20px;
-      display: flex;
-      margin:0;
-      justify-content: space-around;
-      font-size: 14 px;
-      text-transform: uppercase;
-      min-width:350px;
-      position: relative;
-  }
-  .song-list-container {
-    position: relative;
-     overflow-x: scroll;
-    overflow: hidden;
-    margin: 30px 0;
-    margin-top: 35px;
-    margin-bottom: -250px; 
-    padding-bottom: 250px;
-     z-index: -1;
-     color:white;
-  }
   
+.form-group {
+  margin: auto ;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  color: #492525;
 
-.musiclistul {
-    position: relative;
-    width: 550px;
-    height: 250px;
-    background-color: #d7cdcc;
-    overflow-x: scroll;
-    overflow-y: scroll;
-    margin-left: 200px;
-  }
-  .music-list-container{
-    margin-top: 6em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #d7cdcc;
-    box-shadow: 0 0 2px rgba(15, 15 , 15 0.28);
-    border: 2px solid #492445;
-    text-transform: uppercase,bold;
-
-
-  }
-.song-container{
-  position: relative;
-  color:white;
-  font-weight: 200;
-  font-size: 16px;
-  padding: 1px 5px;
-  border-bottom: 1px solid rgba(90, 90, 90, 0.5);
-  display: block;
-  justify-content: space-evenly;
-  margin-left: 30px;
-  margin-right: auto;
-  margin: 30px 0;
-  text-align: center;
-  min-width: 900px;
+  
 }
 .flex-container2 {
-  min-width: 45em;
+  min-width: 40em;
   min-height: 10em;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 7px;
   position: relative;
   display:inline-flexbox;
-  overflow-wrap: break-word;
   box-shadow: 0 0 2px rgba(15, 15 , 15 0.28);
+  overflow-wrap: break-word;
   color: #492525;
-  border: 2px solid #492445;
   background-color:#d7cdcc;
-  padding:3%;
-  margin: 0 auto;
+  border: 2px solid #492445;
+  padding: 1px;
+  margin: 5px 5px 5px 5px;
   overflow-x: auto;
 }
+
 li{
   width: auto;
   word-wrap: break-word;
-}
 
+}
 @media (max-width: 400px) {
  
   .flex-container2{
-    min-width: 20em;
+    min-width: 15em;
     }
 }
 
