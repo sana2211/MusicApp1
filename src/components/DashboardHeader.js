@@ -2,25 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './header.css';
 
-
-const style = {
-    color: 'white',
-    'textDecoration': 'none'
-};
-
 function DashboardHeader(props) {
   return (
-      <header>
-        <nav>
-          <ul>
-            <ul className="menuul">
-            <li>Welcome {props.currentUser}</li>
-            <li><Link to="/signin" style={style}>Sign out</Link></li>
-            </ul>
-          </ul>
-        </nav>
-       
-                 </header>
+<div>
+    <nav>
+      <ul>
+        <ul className="ul">
+        <li><Link to="/">Log out</Link></li>
+        <li><Link to="/Address">Edit Restaurant's info</Link></li>
+        <li><Link to="/AddMenu">Add Menu</Link></li>
+        </ul>
+      </ul>
+    </nav>
+    <br></br>
+
+</div>
+        
     );
 }
   export default DashboardHeader;

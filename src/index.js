@@ -4,18 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import SignIn from './components/signIn';
 import SignUp from './components/signUp';
+import SignIn from './components/signIn';
+
 import Dashboard from './components/Dashboard';
+import Address from './components/Address';
+import AddMenu from './components/AddMenu';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <Switch>
       <Route exact={true} path="/"><App /></Route>
-      <Route path="/signin"><SignIn></SignIn></Route>
       <Route path="/signup"><SignUp></SignUp></Route>
-      <Route path="/dashboard/:id" render={(props)=><Dashboard {...props}></Dashboard>}></Route>
+      <Route path="/signIn"><SignIn></SignIn></Route>
+
+      <Route path="/dashboard/"><Dashboard></Dashboard></Route>
+      <Route path="/Address/"><Address ></Address ></Route>
+      <Route path="/AddMenu/"><AddMenu ></AddMenu></Route>
 
     </Switch>
     </BrowserRouter>

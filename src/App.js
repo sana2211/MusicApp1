@@ -9,7 +9,7 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <div>
+    <div class="app">
       <Header>
       </Header>
       <main>
