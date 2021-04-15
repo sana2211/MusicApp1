@@ -8,11 +8,18 @@ html, body
   padding:0;
   line-height: 1.5;
   text-align: center;
+  /*background-image: url("https://media.architecturaldigest.com/photos/5e20aa88e37a670009c031f0/16:9/w_2560%2Cc_limit/19101_press_fotografiska_12-7-19_199.jpg");*/
+	background-size: cover;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F5F5F5;
+
 }
 
   .main-title {	
-	height: 600px;
-	}
+  height: 600px;
+  background-image: url("https://images.nycgo.com/image/fetch/q_65,c_fill,f_auto,w_750/https://www.nycgo.com/images/venues/2311/rc_image_view.jpg")
+}
  
 #root
 {
