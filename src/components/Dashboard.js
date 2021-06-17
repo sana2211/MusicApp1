@@ -11,7 +11,7 @@ class Dashboard extends Component{
     componentWillMount(){
     const a = window.location.href.split('/');
     const id = a[a.length - 1]
-    fetch(`http://localhost:8000/api/users/${id}`)
+    fetch(`https://musicappbackend101.herokuapp.com/api/users/${id}`)
     .then(result=>result.json())
     .then(result=>{
       this.setState({
@@ -27,11 +27,9 @@ class Dashboard extends Component{
 
                 <br></br>
              <DashboardHeader currentUser={this.state.fullname}></DashboardHeader>
-                    <h2>
-                    <i className="fas fa-music"></i>
-                        Whats Next? Just add your favorite music and get started with the app!
-                    </h2> 
-                    
+                    <h3>
+                         Whats Next ?  Just add your favorite music and get started with the app!
+                    </h3> 
                     <AddMusic></AddMusic>
                     <hr></hr>
                     <Getmusic></Getmusic>

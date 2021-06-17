@@ -1,12 +1,42 @@
-p{
-    background-color: #d7cdcc;
+
+  
+.form-group {
+  margin: auto ;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  color: #492525;
+
+  
 }
-.getmusicul {
-    position: relative;
-    width: 550px;
-    height: 250px;
-    background-color: #d7cdcc;
-    overflow-x: scroll;
-    overflow-y: scroll;
-    margin-left: 200px;
-  }
+.flex-container2 {
+  min-width: 40em;
+  min-height: 10em;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  position: relative;
+  display:inline-flexbox;
+  box-shadow: 0 0 2px rgba(15, 15 , 15 0.28);
+  overflow-wrap: break-word;
+  color: #492525;
+  background-color:#d7cdcc;
+  border: 2px solid #492445;
+  padding: 1px;
+  margin: 5px 5px 5px -15px;
+  overflow-x: auto;
+}
+
+li{
+  width: auto;
+  word-wrap: break-word;
+
+}
+@media (max-width: 400px) {
+ 
+  .flex-container2{
+    min-width: 15em;
+    }
+}
+

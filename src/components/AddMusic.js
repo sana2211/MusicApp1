@@ -1,4 +1,5 @@
 import React from "react";
+import './login.css';
 
 
 export default class AddMusic extends React.Component {
@@ -29,8 +30,7 @@ export default class AddMusic extends React.Component {
       alert("Title is Required");
       return false;
     }
-   
-    fetch('http://localhost:8000/api/bookmarks/'+id, {
+    fetch('https://musicappbackend101.herokuapp.com/api/bookmarks/'+id, {
       method: 'POST',
       body: JSON.stringify({
         'user_id': id,
@@ -59,9 +59,12 @@ export default class AddMusic extends React.Component {
 
     return (
       <div>
-        <h2>Add music</h2>
+        <h2>Add music 
+          <br></br>
+        <i className="fas fa-music"></i>
+        </h2>
         <form onSubmit={(evt)=> this.handleSubmit(evt)}>
-          <div className="form">
+        <div className="flex-container">
             <div className="form-group">
               <label htmlFor="title">Title</label>
               <input onChange={(evt)=>this.handleInput(evt)} type="text" name="title" placeholder="title" />

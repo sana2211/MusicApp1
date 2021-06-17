@@ -2,22 +2,30 @@
 html, body
 {
   width: auto;
-  height: auto;
-  font-family: Helvetica,Arial,sans-serif;
+  height: 100%;
+  font-family: Arial,sans-serif;
   margin: 0;
   padding:0;
   line-height: 1.5;
   color: rgb(61, 58, 58);
-  background-color:black;
-  height: auto;
-  text-align: center; 
+  background-color:	  	#5d2751;
+  text-align: center;
 }
-
+.main-title {	
+	height: 500px;
+  background-image: url('https://variety.com/wp-content/uploads/2018/08/u2-live-show.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #e7ecef;
+  text-shadow: #274c77 2px 2px;
+	}
  
 #root
 {
   width: auto;
   height: auto;
+
 }
 
 .App
@@ -34,11 +42,11 @@ li{
 
 .menuul
 {
-  float: right
+  float: right;
+  color:whitesmoke;
 }
 
 nav
 {
 width: 100%
 }
-

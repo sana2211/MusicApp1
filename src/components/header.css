@@ -4,20 +4,20 @@ header {
     overflow: hidden;
     top: 10px;
     width: 100%;
-    position: float-right;
+    position: relative;
 }
     h1{
-    font-size: 5.3rem;
-    margin-top: 40px;
-    font-weight: bolder;
-    font-family: arial;
+    font-size: 4.0rem;
+    margin-top: 20px;
+    font-weight: lighter;
+    font-family: arial ;
     color: whitesmoke;
-
+    src:url("https://variety.com/wp-content/uploads/2018/08/u2-live-show.jpg")
+    ("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap") ;
     }
-    h3{
-      color:#492445;
+    
+    
 
-  }
   nav{
     cursor: pointer;
     font-size: 20px;
@@ -27,8 +27,7 @@ header {
   .flex-container{
     background-color: #492445 ;
     color:  rgb(167, 161, 161);
-    padding: 5%;
-    display: block;
+   display: inline-flex ;
     box-sizing: border-box;
     margin: auto;
     width: 80%;
@@ -36,13 +35,35 @@ header {
     
   }
   .flex-container h3{
-    color: rgb(167, 161, 161);
+
+    color:#492445;
     flex-direction: column;
     font-size: 30px;
+    margin: 5px;
     }
 
     p{
       font-size: 20px;
       background-color: none;
+      color:#492445;
     }
-  
+    h3{
+      color:white;
+      margin-top: 25px;
+  }
+    
+  @media (max-width: 450px) {
+    nav{
+      font-size: 16px;
+      display: block;
+     text-align: left;
+     float: none;
+     position: relative;
+    }
+    h1 {
+        font-size: 3.0rem;
+  }
+  .flex-container {
+    width: 23em;
+}
+  }
