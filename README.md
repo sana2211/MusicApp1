@@ -1,5 +1,3 @@
-
-https://music-app1-sana2211.vercel.app 
 # The Vibrato Music can be viewed here- https://music-app1-sana2211.vercel.app 
 #  Overview- This app allows you to not only add songs but also store music from random websites. Users can add and delete music of their choice.
 
