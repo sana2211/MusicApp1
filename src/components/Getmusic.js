@@ -7,7 +7,7 @@ class Getmusic extends Component {
         const a = window.location.href.split('/');
   const id = a[a.length - 1]
   console.log(id);
-        const baseURL1 = 'https://musicappbackend101.herokuapp.com/api/bookmarks/'+id;
+        const baseURL1 = 'https://damp-anchorage-18605.herokuapp.com/api/bookmarks/'+id;
         const response = await fetch(baseURL1);
         const data = await response.json();
         console.log(data);
@@ -22,7 +22,7 @@ class Getmusic extends Component {
 
       handleDelete = (musicid) =>
       {
-        fetch(`https://musicappbackend101.herokuapp.com/api/bookmarks/${`${musicid}`}`, {
+        fetch(`https://damp-anchorage-18605.herokuapp.com/api/bookmarks/${`${musicid}`}`, {
             method: 'DELETE',
         })
         .then(res => {

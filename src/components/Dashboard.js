@@ -11,7 +11,7 @@ class Dashboard extends Component{
     componentWillMount(){
     const a = window.location.href.split('/');
     const id = a[a.length - 1]
-    fetch(`https://musicappbackend101.herokuapp.com/api/users/${id}`)
+    fetch(`https://damp-anchorage-18605.herokuapp.com/api/users/${id}`)
     .then(result=>result.json())
     .then(result=>{
       this.setState({

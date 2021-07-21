@@ -30,7 +30,7 @@ export default class AddMusic extends React.Component {
       alert("Title is Required");
       return false;
     }
-    fetch('https://musicappbackend101.herokuapp.com/api/bookmarks/'+id, {
+    fetch('https://damp-anchorage-18605.herokuapp.com/api/bookmarks/'+id, {
       method: 'POST',
       body: JSON.stringify({
         'user_id': id,

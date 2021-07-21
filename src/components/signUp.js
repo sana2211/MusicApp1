@@ -21,7 +21,7 @@ export default class SignUp extends React.Component {
   }
   handleSubmit = (evt) => {
     evt.preventDefault();
-    fetch('https://musicappbackend101.herokuapp.com/api/users', 
+    fetch('https://damp-anchorage-18605.herokuapp.com/api/users', 
     {
       method: 'POST',
       body: JSON.stringify({
