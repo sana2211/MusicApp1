@@ -1,5 +1,9 @@
+<<<<<<< HEAD:README 11.00.23 PM.md
 # The Vibrato Music can be viewed here- https://music-app1-sana2211.vercel.app/.
 
+=======
+# The Vibrato Music can be viewed here- https://music-app1-sana2211.vercel.app 
+>>>>>>> 95b5fac6263306a381a3114c1ace26cbe60dc348:README.md
 #  Overview- This app allows you to not only add songs but also store music from random websites. Users can add and delete music of their choice.
 
 # Screenshots of app: Landing Page
